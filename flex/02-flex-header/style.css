@@ -1,0 +1,45 @@
+.header  {
+    font-family: monospace;
+    background: papayawhip;
+
+    /* by me */
+    /* making the header a flex-container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* adding some padding */
+    padding: 2em 1em;
+  }
+  
+  .logo {
+    font-size: 48px;
+    font-weight: 900;
+    color: tomato;
+    background: white;
+    padding: 4px 32px;
+  }
+  
+  ul {
+    /* this removes the dots on the list items*/
+    list-style-type: none;
+
+    /* by me:
+    - removing paddings and margin from ul */
+    margin: 0;
+    padding: 0;
+
+    /* making ul to flex-container */
+    display: flex;
+
+    /* adding some gaps between flex-items */
+    gap: 1em;
+  }
+  
+  a {
+    font-size: 22px;
+    background: white;
+    padding: 8px;
+    /* this removes the line under the links */
+    text-decoration: none;
+  }

@@ -1,0 +1,70 @@
+/* this is some magical font-importing.  
+you'll learn about it later. */
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+body {
+  margin: 0;
+  background: #eee;
+  font-family: Besley, serif;
+}
+
+.header {
+  background: white;
+  border-bottom: 2em solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  
+  
+  display: flex;        /* making header a flex-container */
+
+  /* adding a small padding, some gap, and centering in cross-axis*/
+  align-items: center;
+  padding: 1em 0.5em;
+  gap: 0.3em;
+}
+
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.logo {
+  color: rebeccapurple;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+button {
+    height: 2.5em;  
+  border: none;
+  border-radius: 8px;
+  background: rebeccapurple;
+  color: white;
+  padding: 0 1.25em;
+
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* making .links and ".notif-and-profile" a flex-container */
+.links, .notif-and-profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.links {
+    margin-right: auto;         /* adding margin-right to push "1 new notification" and the circle to the right side */
+}
